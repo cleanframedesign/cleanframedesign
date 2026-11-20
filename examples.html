@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sample Website Designs | Cleanframe Design</title>
+<meta name="description" content="See the kinds of custom websites Cleanframe Design builds: restaurants, gyms, law firms, local shops, photographers and contractors.">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sample Website Designs | Cleanframe Design">
+<meta property="og:description" content="Examples of custom website styles for restaurants, gyms, law firms, shops, photographers and contractors.">
+<link rel="canonical" href="https://www.cleanframedesign.com/examples.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230066ff'/%3E%3Cpath d='M9 10h14M9 16h14M9 22h8' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#fbfbfd;--surface:#fff;--ink:#1d1d1f;--muted:#515154;--line:#b4b4bc;
+  --accent:#0057d9;--accent-ink:#fff;--grad:linear-gradient(120deg,#0057d9,#7a2bf0 55%,#c2185b);--s0:#fbfbfd;--s3:#cfcfd5;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0b0d;--surface:#161618;--ink:#f5f5f7;--muted:#a1a1a6;--line:#2c2c2e;--accent:#4d94ff;--accent-ink:#000;--grad:linear-gradient(120deg,#4d94ff,#b388ff 55%,#ff7eb3);--s0:#0b0b0d;--s3:#1a1a20}}
+:root[data-theme="dark"]{--bg:#0b0b0d;--surface:#161618;--ink:#f5f5f7;--muted:#a1a1a6;--line:#2c2c2e;--accent:#4d94ff;--accent-ink:#000;--grad:linear-gradient(120deg,#4d94ff,#b388ff 55%,#ff7eb3);--s0:#0b0b0d;--s3:#1a1a20}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--font);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+p{margin:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+h1,h2,h3{line-height:1.1;letter-spacing:-.025em;margin:0}
+
+header.top{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.82);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);padding-top:env(safe-area-inset-top,0px)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{color:#f5f5f7;font-weight:700;text-decoration:none}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{color:#d2d2d7;text-decoration:none;font-size:.9rem;padding:10px 12px;display:inline-block;border-radius:8px}
+nav a:hover{color:#fff}
+nav a.pill{background:#fff;color:#000;font-weight:600;padding:7px 14px}
+@media (max-width:640px){
+  html{scroll-padding-top:110px}
+  nav li:not(:last-child):not(.ex){display:none}
+  .brand{font-size:.9rem}
+  nav a{padding:10px 8px;font-size:.85rem}
+  nav a.pill{padding:7px 12px}
+  .see{display:none}
+  header.top .wrap{height:auto;min-height:56px;flex-wrap:wrap}
+}
+nav a[aria-current]{color:#fff}
+
+.hero{background:linear-gradient(180deg,#000,#2b2b2f);color:#f5f5f7;text-align:center;padding:clamp(72px,12vw,140px) 0}
+.hero h1{font-size:clamp(2.4rem,7.5vw,5.5rem);font-weight:700;letter-spacing:-.04em;max-width:14ch;margin:0 auto}
+.hero p{font-size:clamp(1.1rem,2.2vw,1.4rem);color:#a1a1a6;max-width:44ch;margin:26px auto 0}
+
+.gallery{background:linear-gradient(180deg,var(--s0),var(--s3));padding:clamp(56px,9vw,110px) 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:48px 28px}
+figure{margin:0}
+figcaption{padding:18px 4px 0}
+figcaption h2{font-size:1.35rem;font-weight:700;letter-spacing:-.015em;margin-bottom:6px}
+figcaption p{color:var(--muted);font-size:1rem}
+
+/* browser mockup */
+.site{border-radius:14px;overflow:hidden;background:#0e0e10;border:1px solid #3a3a3c;box-shadow:0 18px 40px rgba(0,0,0,.22)}
+.bar{display:flex;gap:6px;padding:10px 12px}
+.bar i{width:9px;height:9px;border-radius:50%;background:#48484a}
+.scr{background:var(--bg);color:var(--fg);font:12px/1.4 var(--bf,-apple-system,"Segoe UI",Roboto,Arial,sans-serif);min-height:300px;display:flex;flex-direction:column}
+.nv{display:flex;align-items:center;gap:14px;padding:12px 16px}
+.nv b{margin-right:auto;font:700 14px var(--hf)}
+.nv span{opacity:.75}
+.hr{padding:22px 18px 16px}
+.hr h3{font:700 clamp(20px,3.2vw,26px)/1.08 var(--hf);letter-spacing:-.02em;max-width:14ch;margin-bottom:8px}
+.hr p{opacity:.8;margin-bottom:12px}
+.hr u{display:inline-block;text-decoration:none;background:var(--ac);color:var(--bt,#fff);font-weight:700;padding:7px 14px;border-radius:var(--r,999px)}
+.t{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:6px 16px 16px;margin-top:auto}
+.t i{display:grid;place-items:end start;min-height:64px;padding:7px;border-radius:var(--r2,8px);font-style:normal;font-size:10.5px;font-weight:600;color:var(--tf,#fff);background:var(--t1)}
+.t i:nth-child(2){background:var(--t2)}.t i:nth-child(3){background:var(--t3)}
+.t.four{grid-template-columns:repeat(4,1fr)}
+
+.rest{--bg:#f6ecdd;--fg:#3a1d14;--ac:#9c2a1a;--hf:Georgia,"Times New Roman",serif;--t1:linear-gradient(135deg,#c4622d,#7a2a14);--t2:linear-gradient(135deg,#a8741f,#6e3a0e);--t3:linear-gradient(135deg,#6b3a22,#2e150c)}
+.fit{--bg:#0a0a0a;--fg:#fff;--ac:#c6ff00;--bt:#000;--r:2px;--r2:2px;--hf:Impact,"Arial Narrow",sans-serif;--t1:#1d1d1d;--t2:#262626;--t3:#1d1d1d;--tf:#c6ff00}
+.fit .hr h3{text-transform:uppercase;font-weight:400;font-size:clamp(26px,4vw,34px);letter-spacing:.01em}
+.law{--bg:#0f2742;--fg:#f3efe6;--ac:#c9a24b;--bt:#0f2742;--r:3px;--r2:3px;--hf:Georgia,"Times New Roman",serif;--t1:#16355a;--t2:#16355a;--t3:#16355a;--tf:#f3efe6}
+.shop{--bg:#fff;--fg:#222;--ac:#222;--r:3px;--r2:10px;--hf:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--t1:#f5d6dc;--t2:#d9e6d3;--t3:#f3e3c3;--tf:#222}
+.shop .hr{text-align:center}.shop .hr h3{margin-inline:auto}
+.shop .t i{min-height:76px}
+.photo{--bg:#111;--fg:#eee;--ac:#fff;--bt:#000;--r:0px;--r2:2px;--hf:-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.photo .hr h3{font-weight:300;font-size:clamp(24px,4vw,32px);letter-spacing:.02em}
+.photo .t{align-items:end}
+.photo .t i{background:linear-gradient(160deg,#5a5a5f,#1c1c1f)}
+.photo .t i:nth-child(2){min-height:110px;background:linear-gradient(160deg,#8e8e93,#2a2a2d)}
+.photo .t i:nth-child(1){min-height:84px}.photo .t i:nth-child(3){min-height:96px;background:linear-gradient(160deg,#3a3a3d,#0d0d0e)}
+.home{--bg:#0e3b43;--fg:#fff;--ac:#ff8a3d;--bt:#000;--r:6px;--r2:6px;--hf:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--t1:linear-gradient(135deg,#1f6b78,#0a2a30);--t2:linear-gradient(135deg,#b84a14,#7a300a);--t3:linear-gradient(135deg,#2a8f9e,#134650)}
+
+.cta{background:linear-gradient(180deg,#000,#2b2b2f);color:#f5f5f7;text-align:center;padding:clamp(64px,10vw,120px) 0}
+.cta h2{font-size:clamp(2rem,5vw,3.5rem);max-width:16ch;margin:0 auto}
+.cta p{color:#a1a1a6;margin:18px auto 0;max-width:40ch}
+.btn{display:inline-block;margin-top:32px;background:linear-gradient(120deg,#0057d9,#7a2bf0 55%,#c2185b);color:#fff;text-decoration:none;font:600 1.0625rem var(--font);padding:14px 28px;border-radius:980px;transition:filter .2s}
+.btn:hover{filter:brightness(1.12)}
+footer{background:#2b2b2f;color:#a1a1a6;font-size:.875rem;padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px))}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:#a1a1a6}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Cleanframe Design, home">Cleanframe Design</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li class="ex"><a href="examples.html" aria-current="page"><span class="see">See </span>Examples</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a class="pill" href="index.html#contact">Get a quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="t">
+    <div class="wrap">
+      <h1 id="t">Every kind of business. Its own look.</h1>
+      <p>These samples show the range of sites we can build. Yours will be designed from scratch around your brand.</p>
+    </div>
+  </section>
+
+  <section class="gallery" aria-label="Sample designs">
+    <div class="wrap grid">
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample restaurant website with a warm serif headline and food photo tiles">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr rest" aria-hidden="true">
+            <div class="nv"><b>Your Restaurant</b><span>Story</span><span>Contact</span></div>
+            <div class="hr"><h3>Wood-fired food, made to share.</h3><p>Fresh ingredients and a warm welcome</p><u>Contact us</u></div>
+            <div class="t"><i>The kitchen</i><i>The dining room</i><i>The patio</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Restaurants and cafés</h2><p>Your story, photos of the space, and a clear way to reach you.</p></figcaption>
+      </figure>
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample fitness website with bold condensed type on black with lime accents">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr fit" aria-hidden="true">
+            <div class="nv"><b>Your Gym</b><span>About</span><span>Contact</span></div>
+            <div class="hr"><h3>Stronger starts here.</h3><p>Personal training in a space built for results</p><u>Contact us</u></div>
+            <div class="t"><i>Strength</i><i>Cardio</i><i>Coaching</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Gyms and trainers</h2><p>Show your coaches, your space, and how to get in touch.</p></figcaption>
+      </figure>
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample law firm website in navy and gold with a serif headline">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr law" aria-hidden="true">
+            <div class="nv"><b>Your Firm</b><span>Practice</span><span>Contact</span></div>
+            <div class="hr"><h3>Clear advice when it matters.</h3><p>Trusted counsel for families and businesses</p><u>Contact us</u></div>
+            <div class="t"><i>Family law</i><i>Business</i><i>Estates</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Law, finance, and consulting</h2><p>Credibility first: services, team bios, and a clear way to get in touch.</p></figcaption>
+      </figure>
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample shop website with a clean white layout and pastel product photo tiles">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr shop" aria-hidden="true">
+            <div class="nv"><b>Your Shop</b><span>Our story</span><span>Visit</span></div>
+            <div class="hr"><h3>Handmade goods for slow mornings.</h3><u>Visit the studio</u></div>
+            <div class="t four"><i>Mugs</i><i>Candles</i><i>Linens</i><i>Soaps</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Local shops and makers</h2><p>Photo galleries of your products, with your address and contact info.</p></figcaption>
+      </figure>
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample photographer portfolio on black with an uneven image grid">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr photo" aria-hidden="true">
+            <div class="nv"><b>Your Name</b><span>Work</span><span>About</span></div>
+            <div class="hr"><h3>Photographer. Quiet light, real moments.</h3><u>View the portfolio</u></div>
+            <div class="t"><i>Portraits</i><i>Travel</i><i>Weddings</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Portfolios and creatives</h2><p>Let the work lead, with galleries that load fast.</p></figcaption>
+      </figure>
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample contractor website in deep teal with orange accents and project photo tiles">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr home" aria-hidden="true">
+            <div class="nv"><b>Your Company</b><span>Services</span><span>Contact</span></div>
+            <div class="hr"><h3>Quality work, built to last.</h3><p>Serving your neighborhood with care</p><u>Request a quote</u></div>
+            <div class="t"><i>Remodels</i><i>Repairs</i><i>Outdoor</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Contractors and home services</h2><p>Services, project photos, and a quote request that goes straight to you.</p></figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="c">
+    <div class="wrap">
+      <h2 id="c">Don’t see your type of business?</h2>
+      <p>Every site is custom. Tell us about yours and we’ll design something that fits.</p>
+      <a class="btn" href="index.html#contact">Get a free quote</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div id="privacy" style="flex-basis:100%;max-width:62ch">
+      <h2 style="font-size:1rem;font-weight:700;letter-spacing:0;color:#f5f5f7;margin:0 0 6px">Privacy Policy</h2>
+      <p>We do not use cookies or track visitors. If you contact us through the form or by email, we use the details you send only to reply to you. Our hosting provider keeps standard server access logs for security.</p>
+    </div>
+    <span>© <span id="yr">2026</span> Cleanframe Design. All Rights Reserved. Sample designs are examples only.</span>
+    <a href="index.html">Back to home</a>
+    <a href="#t">Back to top</a>
+  </div>
+</footer>
+<script>var y=document.getElementById("yr");if(y)y.textContent=new Date().getFullYear();</script>
+</body>
+</html>
