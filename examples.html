@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sample Website Designs | Cleanframe Design</title>
-<meta name="description" content="See the kinds of custom websites Cleanframe Design builds: restaurants, gyms, law firms, local shops, photographers and contractors.">
+<meta name="description" content="See the kinds of custom websites Cleanframe Design builds: lawn care, tattoo studios, roofers, restaurants, salons and florists.">
 <meta name="theme-color" content="#000000">
 <meta name="color-scheme" content="light dark">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sample Website Designs | Cleanframe Design">
-<meta property="og:description" content="Examples of custom website styles for restaurants, gyms, law firms, shops, photographers and contractors.">
+<meta property="og:description" content="Examples of custom website styles for lawn care, tattoo studios, roofers, restaurants, salons and florists.">
 <link rel="canonical" href="https://www.cleanframedesign.com/examples.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
@@ -66,33 +66,40 @@ figcaption p{color:var(--muted);font-size:1rem}
 .site{border-radius:14px;overflow:hidden;background:#0e0e10;border:1px solid #3a3a3c;box-shadow:0 18px 40px rgba(0,0,0,.22)}
 .bar{display:flex;gap:6px;padding:10px 12px}
 .bar i{width:9px;height:9px;border-radius:50%;background:#48484a}
-.scr{background:var(--bg);color:var(--fg);font:12px/1.4 var(--bf,-apple-system,"Segoe UI",Roboto,Arial,sans-serif);min-height:300px;display:flex;flex-direction:column}
+.scr{background:var(--bg);color:var(--fg);font:12px/1.4 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;min-height:340px;display:flex;flex-direction:column}
+.tb{background:#16212b;color:#fff;padding:6px 16px;font-size:10.5px}
 .nv{display:flex;align-items:center;gap:14px;padding:12px 16px}
-.nv b{margin-right:auto;font:700 14px var(--hf)}
+.nv b{margin-right:auto;font:700 14px var(--hf);display:flex;align-items:center;gap:7px}
+.lg{width:20px;height:20px;flex:none}
 .nv span{opacity:.75}
-.hr{padding:22px 18px 16px}
+.hr{padding:26px 18px 22px;background:var(--hero,none);color:var(--hc,inherit);position:relative;overflow:hidden}
+.hr>*:not(.art){position:relative;z-index:1}
+.art{position:absolute;right:6px;bottom:0;width:40%;max-width:180px;height:auto}
+.salon .art{opacity:.55;width:34%}
 .hr h3{font:700 clamp(20px,3.2vw,26px)/1.08 var(--hf);letter-spacing:-.02em;max-width:14ch;margin-bottom:8px}
-.hr p{opacity:.8;margin-bottom:12px}
+.hr p{opacity:.88;margin-bottom:12px}
 .hr u{display:inline-block;text-decoration:none;background:var(--ac);color:var(--bt,#fff);font-weight:700;padding:7px 14px;border-radius:var(--r,999px)}
-.t{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:6px 16px 16px;margin-top:auto}
-.t i{display:grid;place-items:end start;min-height:64px;padding:7px;border-radius:var(--r2,8px);font-style:normal;font-size:10.5px;font-weight:600;color:var(--tf,#fff);background:var(--t1)}
-.t i:nth-child(2){background:var(--t2)}.t i:nth-child(3){background:var(--t3)}
+.t{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 16px 0}
+.t:last-child{margin-top:auto;padding-bottom:16px}
+.t i{display:flex;flex-direction:column;justify-content:flex-end;min-height:56px;padding:8px;border-radius:var(--r2,8px);font-style:normal;font-size:10.5px;font-weight:600;line-height:1.35;color:var(--tf,#fff);--sh:radial-gradient(circle at 28% 18%,rgba(255,255,255,.28),transparent 58%);background:var(--sh),var(--t1)}
+.t i:nth-child(2){background:var(--sh),var(--t2)}.t i:nth-child(3){background:var(--sh),var(--t3)}
+.t i b{font-size:11.5px;margin-bottom:3px}
 .t.four{grid-template-columns:repeat(4,1fr)}
+.t.chip i{min-height:32px;justify-content:center;text-align:center}
 
+.lawn{--bg:#f3f8ec;--fg:#1e3512;--ac:#2f6b1f;--hf:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--hero:linear-gradient(160deg,#2f6b1f,#5da13a 55%,#a6cf6a);--hc:#fff;--t1:#dcebc6;--t2:#dcebc6;--t3:#dcebc6;--tf:#1e3512;--r2:12px}
+.lawn .t i{justify-content:flex-start;min-height:76px}
+.lawn .hr u{background:#fff;color:#1e3512}
+.ink{--bg:#0b0b0b;--fg:#f2f2f2;--ac:#e11d2e;--r:2px;--r2:2px;--hf:Impact,"Arial Narrow",sans-serif;--hero:linear-gradient(160deg,#1a1a1a,#000 60%,#4a0b12);--hc:#fff;--t1:#161616;--t2:#161616;--t3:#161616;--tf:#f2f2f2}
+.ink .hr h3{text-transform:uppercase;font-weight:400;font-size:clamp(26px,4vw,34px);letter-spacing:.02em}
+.ink .t i{border:1px solid #333}
+.roof{--bg:#f4f5f7;--fg:#16212b;--ac:#c2410c;--r:4px;--r2:4px;--hf:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--hero:linear-gradient(160deg,#16314d,#24506f 65%,#3d6f8f);--hc:#fff;--t1:#fff;--t2:#fff;--t3:#fff;--tf:#16212b}
+.roof .t i{border:1px solid #d9dde3;justify-content:center}
 .rest{--bg:#f6ecdd;--fg:#3a1d14;--ac:#9c2a1a;--hf:Georgia,"Times New Roman",serif;--t1:linear-gradient(135deg,#c4622d,#7a2a14);--t2:linear-gradient(135deg,#a8741f,#6e3a0e);--t3:linear-gradient(135deg,#6b3a22,#2e150c)}
-.fit{--bg:#0a0a0a;--fg:#fff;--ac:#c6ff00;--bt:#000;--r:2px;--r2:2px;--hf:Impact,"Arial Narrow",sans-serif;--t1:#1d1d1d;--t2:#262626;--t3:#1d1d1d;--tf:#c6ff00}
-.fit .hr h3{text-transform:uppercase;font-weight:400;font-size:clamp(26px,4vw,34px);letter-spacing:.01em}
-.law{--bg:#0f2742;--fg:#f3efe6;--ac:#c9a24b;--bt:#0f2742;--r:3px;--r2:3px;--hf:Georgia,"Times New Roman",serif;--t1:#16355a;--t2:#16355a;--t3:#16355a;--tf:#f3efe6}
-.shop{--bg:#fff;--fg:#222;--ac:#222;--r:3px;--r2:10px;--hf:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--t1:#f5d6dc;--t2:#d9e6d3;--t3:#f3e3c3;--tf:#222}
-.shop .hr{text-align:center}.shop .hr h3{margin-inline:auto}
-.shop .t i{min-height:76px}
-.photo{--bg:#111;--fg:#eee;--ac:#fff;--bt:#000;--r:0px;--r2:2px;--hf:-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
-.photo .hr h3{font-weight:300;font-size:clamp(24px,4vw,32px);letter-spacing:.02em}
-.photo .t{align-items:end}
-.photo .t i{background:linear-gradient(160deg,#5a5a5f,#1c1c1f)}
-.photo .t i:nth-child(2){min-height:110px;background:linear-gradient(160deg,#8e8e93,#2a2a2d)}
-.photo .t i:nth-child(1){min-height:84px}.photo .t i:nth-child(3){min-height:96px;background:linear-gradient(160deg,#3a3a3d,#0d0d0e)}
-.home{--bg:#0e3b43;--fg:#fff;--ac:#ff8a3d;--bt:#000;--r:6px;--r2:6px;--hf:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--t1:linear-gradient(135deg,#1f6b78,#0a2a30);--t2:linear-gradient(135deg,#b84a14,#7a300a);--t3:linear-gradient(135deg,#2a8f9e,#134650)}
+.salon{--bg:#fbf4f1;--fg:#3b2a2a;--ac:#9d5b69;--hf:Georgia,"Times New Roman",serif;--hero:linear-gradient(160deg,#f4dcdc,#e8c1c4 60%,#d9a7ae);--hc:#3b2a2a;--t1:#f1d9d9;--t2:#e6d6cf;--t3:#f1d9d9;--tf:#3b2a2a;--r2:40px}
+.salon .hr{text-align:center}.salon .hr h3{margin-inline:auto}
+.salon .t i{justify-content:center;text-align:center;min-height:46px}
+.bloom{--bg:#fff8f6;--fg:#3a2a33;--ac:#a94a6b;--r2:14px;--hf:Georgia,"Times New Roman",serif;--hero:linear-gradient(160deg,#fde6ec,#f6d0dc 55%,#dcefd0);--hc:#3a2a33;--t1:linear-gradient(135deg,#f4b6c6,#e68aa6);--t2:linear-gradient(135deg,#d9c3f0,#b28fd9);--t3:linear-gradient(135deg,#a8d68a,#7cbf5a);--tf:#2f1f2a}
 
 .cta{background:linear-gradient(180deg,#000,#2b2b2f);color:#f5f5f7;text-align:center;padding:clamp(64px,10vw,120px) 0}
 .cta h2{font-size:clamp(2rem,5vw,3.5rem);max-width:16ch;margin:0 auto}
@@ -134,11 +141,50 @@ footer a{color:#a1a1a6}
     <div class="wrap grid">
 
       <figure>
-        <div class="site" role="img" aria-label="Sample restaurant website with a warm serif headline and food photo tiles">
+        <div class="site" role="img" aria-label="Sample lawn care website in fresh green with a lawn-colored banner and three service cards">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr lawn" aria-hidden="true">
+            <div class="nv"><b><svg class='lg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='11' fill='#2f6b1f'/><path d='M6 17c0-7 5-10 12-10 0 7-4 11-11 11z' fill='#bfe08a'/><path d='M6 18c3-3 6-5 9-7' stroke='#2f6b1f' stroke-width='1.2' fill='none'/></svg>Your Lawn Care</b><span>Services</span><span>Contact</span></div>
+            <div class="hr"><svg class='art' viewBox='0 0 120 100'><circle cx='92' cy='22' r='12' fill='#fff6c8'/><path d='M0 70Q30 50 60 66T120 60V100H0Z' fill='#2f6b1f' opacity='.75'/><path d='M0 84Q40 66 80 80T120 76V100H0Z' fill='#1e4a12'/><rect x='28' y='50' width='4' height='22' fill='#6b4a2b'/><circle cx='30' cy='44' r='13' fill='#3f8f2a'/><path d='M62 74v-16l14-10 14 10v16z' fill='#f3f8ec'/><path d='M58 60l18-14 18 14z' fill='#b24f2e'/></svg><h3>Healthy lawns. Happy neighbors.</h3><p>Mowing, landscaping and seasonal care</p><u>Get a free quote</u></div>
+            <div class="t"><i><b>Mowing</b>Weekly cuts<br>Seasonal cleanups</i><i><b>Landscaping</b>Mulch and rock<br>New garden beds</i><i><b>Treatments</b>Weed control<br>Fertilizing</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Lawn care and landscaping</h2><p>Fresh and friendly, with your services laid out clearly and a quote button always in reach.</p></figcaption>
+      </figure>
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample tattoo studio website in black and red with bold type, style tags and an artist row">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr ink" aria-hidden="true">
+            <div class="nv"><b><svg class='lg' viewBox='0 0 24 24'><path d='M12 1l10 11-10 11L2 12z' fill='#e11d2e'/><path d='M13 5l-5 8h4l-1 6 5-8h-4z' fill='#fff'/></svg>YOUR STUDIO</b><span>Artists</span><span>Contact</span></div>
+            <div class="hr"><svg class='art' viewBox='0 0 120 100'><circle cx='64' cy='52' r='34' fill='none' stroke='#e11d2e' stroke-width='3' opacity='.8'/><path d='M64 8l6 52-6 8-6-8z' fill='#f2f2f2'/><rect x='50' y='62' width='28' height='5' rx='2' fill='#e11d2e'/><rect x='61' y='67' width='6' height='14' fill='#f2f2f2'/><circle cx='64' cy='85' r='4' fill='#e11d2e'/><path d='M24 20l3 6 6 1-5 4 1 6-5-3-5 3 1-6-5-4 6-1z' fill='#e11d2e' opacity='.8'/></svg><h3>Custom ink. Real artists.</h3><p>One-of-a-kind work, drawn for you</p><u>Get in touch</u></div>
+            <div class="t four chip"><i>Color</i><i>Realism</i><i>Lettering</i><i>Traditional</i></div>
+            <div class="t"><i>Artist One</i><i>Artist Two</i><i>Artist Three</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Tattoo studios and barbers</h2><p>Bold, dark and personal, with room to feature your artists and styles.</p></figcaption>
+      </figure>
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample roofing website with a contact bar, a blue hero, credential badges and six service tiles">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="scr roof" aria-hidden="true">
+            <div class="tb">Call today for a free consultation</div>
+            <div class="nv"><b><svg class='lg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='#c2410c'/><path d='M4 14L12 6l8 8M7 14l5-5 5 5' stroke='#fff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>Your Roofing</b><span>Services</span><span>Reviews</span></div>
+            <div class="hr"><svg class='art' viewBox='0 0 120 100'><rect x='30' y='58' width='64' height='42' fill='#e9eef3'/><rect x='52' y='74' width='16' height='26' fill='#16314d'/><rect x='76' y='16' width='10' height='24' fill='#8a97a3'/><path d='M16 62L62 18l46 44z' fill='#16212b'/><path d='M26 56l36-34 36 34M38 56l24-23 24 23' stroke='#3d6f8f' stroke-width='2' fill='none'/></svg><h3>Roofs built to last.</h3><p>★★★★★ Trusted by homeowners</p><u>Free consultation</u></div>
+            <div class="t chip"><i>Licensed</i><i>Insured</i><i>Warrantied</i></div>
+            <div class="t"><i>Replacement</i><i>Storm damage</i><i>Leak repair</i><i>Commercial</i><i>Coatings</i><i>Maintenance</i></div>
+          </div>
+        </div>
+        <figcaption><h2>Roofers and contractors</h2><p>Trust first: credentials, services and customer reviews up front, with a call button on top.</p></figcaption>
+      </figure>
+
+      <figure>
+        <div class="site" role="img" aria-label="Sample restaurant website with a warm serif headline and photo tiles of the space">
           <div class="bar"><i></i><i></i><i></i></div>
           <div class="scr rest" aria-hidden="true">
-            <div class="nv"><b>Your Restaurant</b><span>Story</span><span>Contact</span></div>
-            <div class="hr"><h3>Wood-fired food, made to share.</h3><p>Fresh ingredients and a warm welcome</p><u>Contact us</u></div>
+            <div class="nv"><b><svg class='lg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='11' fill='#9c2a1a'/><path d='M12 4c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 1-3 0-6 1-9z' fill='#f6ecdd'/></svg>Your Restaurant</b><span>Story</span><span>Contact</span></div>
+            <div class="hr"><svg class='art' viewBox='0 0 120 100'><circle cx='64' cy='54' r='40' fill='#e2b872'/><circle cx='64' cy='54' r='33' fill='#c4622d'/><circle cx='64' cy='54' r='29' fill='#f3d9a0' opacity='.9'/><circle cx='52' cy='44' r='6' fill='#9c2a1a'/><circle cx='76' cy='50' r='6' fill='#9c2a1a'/><circle cx='60' cy='68' r='6' fill='#9c2a1a'/><circle cx='72' cy='36' r='3' fill='#3f7d2a'/><circle cx='46' cy='60' r='3' fill='#3f7d2a'/><path d='M64 14v80M24 54h80' stroke='#c4622d' stroke-width='1.2' opacity='.6'/></svg><h3>Wood-fired food, made to share.</h3><p>Fresh ingredients and a warm welcome</p><u>Contact us</u></div>
             <div class="t"><i>The kitchen</i><i>The dining room</i><i>The patio</i></div>
           </div>
         </div>
@@ -146,63 +192,27 @@ footer a{color:#a1a1a6}
       </figure>
 
       <figure>
-        <div class="site" role="img" aria-label="Sample fitness website with bold condensed type on black with lime accents">
+        <div class="site" role="img" aria-label="Sample salon website in soft blush tones with a serif headline and rounded service tiles">
           <div class="bar"><i></i><i></i><i></i></div>
-          <div class="scr fit" aria-hidden="true">
-            <div class="nv"><b>Your Gym</b><span>About</span><span>Contact</span></div>
-            <div class="hr"><h3>Stronger starts here.</h3><p>Personal training in a space built for results</p><u>Contact us</u></div>
-            <div class="t"><i>Strength</i><i>Cardio</i><i>Coaching</i></div>
+          <div class="scr salon" aria-hidden="true">
+            <div class="nv"><b><svg class='lg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='11' fill='#9d5b69'/><path d='M12 5c4 3 4 9 0 14-4-5-4-11 0-14z' fill='#fbf4f1'/></svg>Your Salon</b><span>Services</span><span>Contact</span></div>
+            <div class="hr"><svg class='art' viewBox='0 0 120 100'><circle cx='64' cy='40' r='28' fill='#fbf4f1' stroke='#9d5b69' stroke-width='4'/><path d='M50 30q10-10 24-4' stroke='#fff' stroke-width='3' fill='none' stroke-linecap='round' opacity='.8'/><rect x='60' y='68' width='8' height='30' rx='4' fill='#9d5b69'/><path d='M98 14l3 7 7 3-7 3-3 7-3-7-7-3 7-3zM22 56l2 5 5 2-5 2-2 5-2-5-5-2 5-2z' fill='#fff' opacity='.85'/></svg><h3>Feel like yourself, only better.</h3><p>Hair, color, nails and skin care</p><u>Get in touch</u></div>
+            <div class="t four"><i>Hair</i><i>Color</i><i>Nails</i><i>Skin</i></div>
           </div>
         </div>
-        <figcaption><h2>Gyms and trainers</h2><p>Show your coaches, your space, and how to get in touch.</p></figcaption>
+        <figcaption><h2>Salons and spas</h2><p>Soft and elegant, with your services and a look-book front and center.</p></figcaption>
       </figure>
 
       <figure>
-        <div class="site" role="img" aria-label="Sample law firm website in navy and gold with a serif headline">
+        <div class="site" role="img" aria-label="Sample florist and gift shop website in soft pink and green with a flower illustration and bouquet tiles">
           <div class="bar"><i></i><i></i><i></i></div>
-          <div class="scr law" aria-hidden="true">
-            <div class="nv"><b>Your Firm</b><span>Practice</span><span>Contact</span></div>
-            <div class="hr"><h3>Clear advice when it matters.</h3><p>Trusted counsel for families and businesses</p><u>Contact us</u></div>
-            <div class="t"><i>Family law</i><i>Business</i><i>Estates</i></div>
+          <div class="scr bloom" aria-hidden="true">
+            <div class="nv"><b><svg class='lg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='11' fill='#4f8a4b'/><g fill='#fbe3ea'><circle cx='12' cy='7' r='3'/><circle cx='17' cy='11' r='3'/><circle cx='15' cy='17' r='3'/><circle cx='9' cy='17' r='3'/><circle cx='7' cy='11' r='3'/></g><circle cx='12' cy='12' r='2.5' fill='#f2b134'/></svg>Your Florist</b><span>Gifts</span><span>Contact</span></div>
+            <div class="hr"><svg class='art' viewBox='0 0 120 100'><path d='M64 100V54M50 100q4-24 14-46M78 100q-4-24-14-46' stroke='#3f7d2a' stroke-width='3' fill='none'/><path d='M52 80q-14-4-18-16 12 0 18 16zM76 76q14-4 18-16-12 0-18 16z' fill='#5da13a'/><g fill='#f4b6c6'><circle cx='64' cy='34' r='11'/><circle cx='51' cy='42' r='11'/><circle cx='77' cy='42' r='11'/><circle cx='56' cy='52' r='10'/><circle cx='72' cy='52' r='10'/></g><circle cx='64' cy='44' r='7' fill='#f2b134'/><g fill='#fff'><circle cx='30' cy='30' r='4'/><circle cx='98' cy='22' r='5'/></g></svg><h3>Flowers and gifts, made with care.</h3><p>Bouquets, candles and thoughtful gifts</p><u>Get in touch</u></div>
+            <div class="t"><i>Bouquets</i><i>Plants</i><i>Gifts</i></div>
           </div>
         </div>
-        <figcaption><h2>Law, finance, and consulting</h2><p>Credibility first: services, team bios, and a clear way to get in touch.</p></figcaption>
-      </figure>
-
-      <figure>
-        <div class="site" role="img" aria-label="Sample shop website with a clean white layout and pastel product photo tiles">
-          <div class="bar"><i></i><i></i><i></i></div>
-          <div class="scr shop" aria-hidden="true">
-            <div class="nv"><b>Your Shop</b><span>Our story</span><span>Visit</span></div>
-            <div class="hr"><h3>Handmade goods for slow mornings.</h3><u>Visit the studio</u></div>
-            <div class="t four"><i>Mugs</i><i>Candles</i><i>Linens</i><i>Soaps</i></div>
-          </div>
-        </div>
-        <figcaption><h2>Local shops and makers</h2><p>Photo galleries of your products, with your address and contact info.</p></figcaption>
-      </figure>
-
-      <figure>
-        <div class="site" role="img" aria-label="Sample photographer portfolio on black with an uneven image grid">
-          <div class="bar"><i></i><i></i><i></i></div>
-          <div class="scr photo" aria-hidden="true">
-            <div class="nv"><b>Your Name</b><span>Work</span><span>About</span></div>
-            <div class="hr"><h3>Photographer. Quiet light, real moments.</h3><u>View the portfolio</u></div>
-            <div class="t"><i>Portraits</i><i>Travel</i><i>Weddings</i></div>
-          </div>
-        </div>
-        <figcaption><h2>Portfolios and creatives</h2><p>Let the work lead, with galleries that load fast.</p></figcaption>
-      </figure>
-
-      <figure>
-        <div class="site" role="img" aria-label="Sample contractor website in deep teal with orange accents and project photo tiles">
-          <div class="bar"><i></i><i></i><i></i></div>
-          <div class="scr home" aria-hidden="true">
-            <div class="nv"><b>Your Company</b><span>Services</span><span>Contact</span></div>
-            <div class="hr"><h3>Quality work, built to last.</h3><p>Serving your neighborhood with care</p><u>Request a quote</u></div>
-            <div class="t"><i>Remodels</i><i>Repairs</i><i>Outdoor</i></div>
-          </div>
-        </div>
-        <figcaption><h2>Contractors and home services</h2><p>Services, project photos, and a quote request that goes straight to you.</p></figcaption>
+        <figcaption><h2>Florists and gift shops</h2><p>Soft, pretty and personal, with a photo gallery of your arrangements and gifts.</p></figcaption>
       </figure>
 
     </div>
