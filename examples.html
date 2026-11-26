@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sample Website Designs | Cleanframe Design">
 <meta property="og:description" content="Examples of custom website styles for lawn care, tattoo studios, roofers, restaurants, salons and florists.">
-<link rel="canonical" href="https://www.cleanframedesign.com/examples.html">
+<link rel="canonical" href="https://www.cleanframedesign.com/examples">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
 :root{
@@ -116,14 +116,14 @@ footer a{color:#a1a1a6}
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Cleanframe Design, home">Cleanframe Design</a>
+    <a class="brand" href="/" aria-label="Cleanframe Design, home">Cleanframe Design</a>
     <nav aria-label="Main">
       <ul>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#process">Process</a></li>
-        <li class="ex"><a href="examples.html" aria-current="page"><span class="see">See </span>Examples</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
-        <li><a class="pill" href="index.html#contact">Get a quote</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#process">Process</a></li>
+        <li class="ex"><a href="/examples" aria-current="page"><span class="see">See </span>Examples</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a class="pill" href="/#contact">Get a quote</a></li>
       </ul>
     </nav>
   </div>
@@ -222,7 +222,7 @@ footer a{color:#a1a1a6}
     <div class="wrap">
       <h2 id="c">Don’t see your type of business?</h2>
       <p>Every site is custom. Tell us about yours and we’ll design something that fits.</p>
-      <a class="btn" href="index.html#contact">Get a free quote</a>
+      <a class="btn" href="/#contact">Get a free quote</a>
     </div>
   </section>
 </main>
@@ -234,10 +234,13 @@ footer a{color:#a1a1a6}
       <p>We do not use cookies or track visitors. If you contact us through the form or by email, we use the details you send only to reply to you. Our hosting provider keeps standard server access logs for security.</p>
     </div>
     <span>© <span id="yr">2026</span> Cleanframe Design. All Rights Reserved. Sample designs are examples only.</span>
-    <a href="index.html">Back to home</a>
+    <a href="/">Back to home</a>
     <a href="#t">Back to top</a>
   </div>
 </footer>
-<script>var y=document.getElementById("yr");if(y)y.textContent=new Date().getFullYear();</script>
+<script>
+var y=document.getElementById("yr");if(y)y.textContent=new Date().getFullYear();
+try{if(location.protocol.indexOf("http")===0&&/\.html$/.test(location.pathname)){history.replaceState(null,"",location.pathname.replace(/\.html$/,""))}}catch(e){}
+</script>
 </body>
 </html>
